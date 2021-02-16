@@ -46,7 +46,24 @@ Customer Service is a core service for a lot of businesses around the world and 
 #### 5) [Lambda](https://aws.amazon.com/lambda/) - LF1
 - Trigger to fulfill the recommendation by sending it to SQS for later processing after the conversation.
 
-#### 6) 
+#### 6) [Simple Queue Servive](https://console.aws.amazon.com/sqs/v2/home)
+- FIFO type.
+
+#### 7) [ElasticSearch](https://console.aws.amazon.com/es/home)
+- 7000+ Yelp API cuisines data.
+- Store restaurants Key ID and cuisine types.
+
+#### 8) [DynamoDB](https://console.aws.amazon.com/dynamodb/home?region=us-east-1)
+- 7000+ Yelp API cuisines data.
+- Key: restaurant ID and insertedAtTimestamp.
+- Data columns: Business ID, Name, Address, Coordinates, Number of Reviews, Rating, Zip Code, and Phone number.
+
+#### 9) [Lambda](https://aws.amazon.com/lambda/) - LF2
+- Take requests from SQS.
+- Retrieve key message and get key id by elasticsearch.
+- Use key as an index to load data from dynamodB.
+- Randomly select recommended restaurants.
+- Organize the data into a message and deliver it to users by both e-mail and phone.
 
 
 
