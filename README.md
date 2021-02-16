@@ -3,6 +3,11 @@
 ## Overview ##
 Customer Service is a core service for a lot of businesses around the world and it is getting disrupted at the moment by Natural Language Processing-powered applications. The [Dining Concierge Chatbot](https://cloud-assignment1-bucket.s3.amazonaws.com/chat.html) is a serverless, microservice-driven web application that sends customers restaurant suggestions given a set of preferences that they provide the chatbot with through conversation. 
 
+## Demo ##
+![image](https://github.com/jyincheng/Dining-Recommendation-Chatbot/blob/main/demo-1.png)
+![image](https://github.com/jyincheng/Dining-Recommendation-Chatbot/blob/main/demo-2.png)
+![image](https://github.com/jyincheng/Dining-Recommendation-Chatbot/blob/main/demo-3.png)
+![image](https://github.com/jyincheng/Dining-Recommendation-Chatbot/blob/main/demo-4.png)
 
 ## Application (Language & Tools) ##
 1) Frontend: CSS, HTML, JavaScript
