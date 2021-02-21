@@ -21,6 +21,11 @@ Customer Service is a core service for a lot of businesses around the world and 
 3) API -> LF0: LF0 receive message from API.
 4) LF0 -> Lex: direct user's message to Lex and start the conversation with the Dining Chatbot.
 5) Lex -> LF1: after the conversation, LF1 will be triggered to send recommendation to users via SQS.
+6) Lex -> SQS: Lex will send user's request of restaurant type to the SQS
+7) SQS -> LF2: SQS will trigger LF2 to serach in the DynamoDB and Elastic Search
+8) DynamoDB -> LF2: respond the user's request of restaurant recommendation
+9) LF2 -> SNS: send the user's input email/test message information to SNS
+10) SNS -> User email/text message: send out the restaurant recommendation via email or text message to the user
 
 
 ## Description ##
